@@ -85,12 +85,15 @@ const Employees = () => {
         gender: "male",
         teamName: "TeamD"
       }]);
-    
+
     return (
       <main>
-        <h1>Header</h1>
+        {
+          Employees.map((employee) => (
+            <p>{employee.fullname}</p>
+          ))
+        }
       </main>
     )
   }
-  
   export default Employees
